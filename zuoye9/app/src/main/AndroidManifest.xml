@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zuoye9">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/徐汇江_18660014"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BannerIndicatorActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name=".TabCustomActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name=".SearchViewActivity"
+            android:exported="true"
+            android:theme="@style/AppCompatTheme" />
+        <activity
+            android:name=".SearchResultActvity"
+            android:theme="@style/AppCompatTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".TabHostActivity"
+            android:exported="true" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
